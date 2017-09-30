@@ -22,6 +22,8 @@ function bork_new(big) {
 // Clear bork index with bork_reset().
 function bork_reset() {
     bork_borks = [];
+    if(bork_borks == []) {
+        console.warning("bork: index already empty.")
 }
 
 // Take bork index and add it to the buffer
@@ -36,7 +38,8 @@ function bork_set() {
         }
         bork_dec = parseInt(bork_chain, 2);
         bork_buffer += bork_table[bork_dec];
-        bork_chain = ""
+        bork_chain = "";
+        bork_borks = [];
     } else {
         console.error("bork: bork string not 5 borks")
     }
