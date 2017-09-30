@@ -32,17 +32,17 @@ function bork_set() {
                 bork_chain += "0";
             } else if (bork_borks[i] == "BORK") {
                 bork_chain += "1"
-             }
+            }
         }
-			bork_dec = parseInt(bork_chain, 2);
-			bork_buffer += bork_table[bork_dec];
-			bork_chain = ""	
-             } else {
-            console.error("bork: bork string not 5 borks")
-             }
-         }
+        bork_dec = parseInt(bork_chain, 2);
+        bork_buffer += bork_table[bork_dec];
+        bork_chain = ""
+    } else {
+        console.error("bork: bork string not 5 borks")
+    }
+}
 // Print out then clear bork buffer
 function bork_print() {
-	console.log("Bork buffer: " + bork_buffer);
-	bork_buffer = "";
+    console.log("Bork buffer: " + bork_buffer);
+    bork_buffer = "";
 }
