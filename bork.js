@@ -22,9 +22,6 @@ function bork_new(big) {
 // Clear bork index with bork_reset().
 function bork_reset() {
     bork_borks = [];
-    if(bork_borks == []) {
-        console.warning("bork: index already empty.")
-    }
 }
 
 // Take bork index and add it to the buffer
