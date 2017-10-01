@@ -47,3 +47,14 @@ function bork_print() {
     console.log("Bork buffer: " + bork_buffer);
     bork_buffer = "";
 }
+
+// Sets text of item to bork buffer
+function bork_change(id) {
+	if (document.getElementById(id) != null) {
+		document.getElementById(id).textContent = bork_buffer
+		bork_buffer = "";
+    } else {
+		console.error("bork: item with " + id + " does not exist")
+    }
+	bork_buffer = "";
+}
