@@ -6,3 +6,4 @@ The commands are:
 - `bork_set()` Gets character for bork list and add it to the buffer
 - `bork_reset()` Resets bork index for the next bork list.
 - `bork_print()` Resets bork buffer after outputting it.
+- `bork_change(id)` Gets element with id and sets text content to bork buffer
