@@ -7,3 +7,5 @@ The commands are:
 - `bork_reset()` Resets bork index for the next bork list.
 - `bork_print()` Resets bork buffer after outputting it.
 - `bork_change(id)` Gets element with id and sets text content to bork buffer
+
+If you figure out a way to use bork.js in your site, follow the license but feel free.
